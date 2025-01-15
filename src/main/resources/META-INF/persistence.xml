@@ -1,0 +1,37 @@
+
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd" version="3.0">
+    <persistence-unit name="JPA ORM MariaDB" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <class>entities.KhachHang</class>
+        <class>entities.DichVu</class>
+        <class>entities.ChiTietHoaDonDichVu</class>
+        <class>entities.ChiTietHoaDonPhong</class>
+        <class>entities.HoaDon</class>
+        <class>entities.NguoiDung</class>
+        <class>entities.NhanVien</class>
+        <class>entities.Phong</class>
+        <class>entities.TaiKhoan</class>
+        <class>entities.enums.ChucVu</class>
+        <class>entities.enums.GioiTinh</class>
+        <class>entities.enums.LoaiDichVu</class>
+        <class>entities.enums.HoiVien</class>
+        <class>entities.enums.LoaiNguoiDung</class>
+        <class>entities.enums.LoaiPhong</class>
+        <class>entities.enums.LoaiTaiKhoan</class>
+        <class>entities.enums.TrangThaiDichVu</class>
+        <class>entities.enums.TrangThaiHoaDon</class>
+        <class>entities.enums.TrangThaiNhanVien</class>
+        <class>entities.enums.TrangThaiPhong</class>
+
+        <properties>
+            <property name="jakarta.persistence.jdbc.driver" value="org.mariadb.jdbc.Driver"/>
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:mariadb://localhost:3000/karaoke"/>
+            <property name="jakarta.persistence.jdbc.user" value="root"/>
+            <property name="jakarta.persistence.jdbc.password" value="123"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MariaDBDialect"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+        </properties>
+    </persistence-unit>
+</persistence>
