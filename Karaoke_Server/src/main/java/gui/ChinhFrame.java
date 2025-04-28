@@ -2,31 +2,14 @@ package gui;
 
 import com.formdev.flatlaf.FlatClientProperties;
 
-import dao.ChiTietHoaDonDichVuDAO;
-import dao.ChiTietHoaDonPhongDAO;
-import dao.DichVuDAO;
 import dao.HoaDonDAO;
-import dao.KhachHangDAO;
-import dao.NhanVienDAO;
-import dao.PhongDAO;
-import dao.TaiKhoanDAO;
-import interfaces.ChiTietHoaDonDichVuIDAO;
-import interfaces.ChiTietHoaDonPhongIDAO;
-import interfaces.DichVuIDAO;
-import interfaces.HoaDonIDAO;
 import interfaces.KhachHangIDAO;
 import interfaces.NhanVienIDAO;
 import interfaces.PhongIDAO;
 import interfaces.TaiKhoanIDAO;
-import jakarta.persistence.EntityManager;
-import net.miginfocom.swing.MigLayout;
-import raven.chart.ChartLegendRenderer;
-import raven.chart.data.category.DefaultCategoryDataset;
-import raven.chart.line.LineChart;
+
 import raven.swing.blur.BlurBackground;
-import raven.swing.blur.BlurChild;
 import raven.swing.blur.style.StyleOverlay;
-import utils.EntityManagerFactoryUltil;
 import utils.ServerRMI;
 import utils.guicomponents.FlatRobotoInit;
 import utils.guicomponents.MyImageIcon;
